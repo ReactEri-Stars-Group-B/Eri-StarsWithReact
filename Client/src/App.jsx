@@ -1,6 +1,7 @@
 import Footer from "./Components/Footer/Footer"
 import Header from "./Components/Header/Header"
-import { BrowserRouter} from 'react-router-dom'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
+import Home from "./Components/Home/Home"
 function App() {
   
 
@@ -8,7 +9,8 @@ function App() {
     <>
        <BrowserRouter>
        <Header/>
-       <Footer/>
+        <Home/>
+      <Footer/>
        </BrowserRouter>
        </>
   )

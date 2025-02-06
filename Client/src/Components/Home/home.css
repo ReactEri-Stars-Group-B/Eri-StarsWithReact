@@ -1,0 +1,120 @@
+.home{
+    display: flex;
+    flex-direction: column;
+}
+.camel img{
+    width: 100%;
+    height: 350px;
+}
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    gap: 50px; 
+}
+.home section:first-of-type h2{
+ text-align: center;
+ margin-bottom: 40px;
+ margin-top: 30px;
+}
+.home section:first-of-type p{
+ font-size: 17px;
+ margin: 0 10px;
+}
+.viewcard{
+display: flex;
+justify-content: space-around;
+}
+.viewcard article{
+    background-color: rgb(212, 227, 240);
+    width: 270px;
+    height: 130px ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.viewcard article label{
+    color: rgb(225, 79, 79);
+    font-size: 25px;
+}
+.viewcard article p{
+    font-size: 19px;
+}
+.viewcard article:hover{
+   background-color:  rgb(199, 223, 244);
+   box-shadow: 5px 5px 22px  rgb(157, 170, 183);
+}
+.home section:last-child h3{
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 50px;
+}
+.card{
+    display: flex;
+justify-content: space-around;
+width: 100%;
+}
+.img_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+   background-color:rgb(213, 211, 209) ;
+   border-radius: 7px;
+   box-shadow: 0 0 20px rgb(199, 186, 174) ;
+   transition: transform 0.5s ease-in-out;
+}
+.img_card img{
+    width: 100%;
+    height: 200px;
+}
+.img_card p{
+    font-size: 18px;
+}
+.img_card button{
+    padding: 2px 4px;
+    font-size: 16px;
+}
+.img_card:hover{
+    
+    transform: scale(1.1); 
+}
+.img_card h5{
+    font-size: 16px;
+}
+.img_card button{
+    padding: 5px 10px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background-color:rgb(199, 186, 174) ;
+    border-radius: 50px;
+}
+.img_card button:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width:855px) {
+    .viewcard{
+       display: grid;
+       grid-template-columns: repeat(2,2fr);
+       gap: 20px;
+      justify-items: center;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        gap: 20px;
+       justify-items: center;
+    }
+}
+@media screen and (max-width:580px) {
+    .viewcard{
+        grid-template-columns: repeat(1,2fr);
+    }
+    .card{
+        grid-template-columns: repeat(1,2fr);
+        gap: 30px;
+    }
+}
