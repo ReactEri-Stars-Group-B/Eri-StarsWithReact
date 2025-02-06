@@ -2,8 +2,6 @@
 html, body {
     margin: 0;
     padding: 0;
-    .overflow-x: hidden; /* Prevent horizontal scrolling */
-    .overflow-y: hidden;
 }
 .footer {
     display: flex;
