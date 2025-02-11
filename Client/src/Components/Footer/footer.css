@@ -7,9 +7,10 @@ html, body {
     display: flex;
     flex-direction: column;
     width: 100%;  /* Make it responsive */
-    height: 170px;
+    height: 158px;
     background-color: rgb(186, 205, 205);
     margin: 0 auto;  /* Centers the footer */
+  
 }
 .footercontainer{
     display: flex;
@@ -41,6 +42,12 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+   
+}
+.socialmedia p{
+    margin: 0;
+    font-size: 18px;
+
 }
 .icons{
     display: flex;

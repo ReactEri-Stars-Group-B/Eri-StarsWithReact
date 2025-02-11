@@ -18,8 +18,8 @@
  margin-top: 30px;
 }
 .home section:first-of-type p{
- font-size: 17px;
- margin: 0 10px;
+ font-size: 19px;
+ margin: 0 20px;
 }
 .viewcard{
 display: flex;
@@ -34,13 +34,16 @@ justify-content: space-around;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+   gap: 20px;
 }
 .viewcard article label{
     color: rgb(225, 79, 79);
     font-size: 25px;
+   
 }
 .viewcard article p{
     font-size: 19px;
+    margin: 0;
 }
 .viewcard article:hover{
    background-color:  rgb(199, 223, 244);
@@ -96,6 +99,9 @@ width: 100%;
     transform: scale(1.1);
 }
 @media screen and (max-width:855px) {
+    .camel img{
+        height: 300px;
+    }
     .viewcard{
        display: grid;
        grid-template-columns: repeat(2,2fr);
@@ -110,6 +116,9 @@ width: 100%;
     }
 }
 @media screen and (max-width:580px) {
+    .camel img{
+        height: 250px;
+    }
     .viewcard{
         grid-template-columns: repeat(1,2fr);
     }
