@@ -1,0 +1,157 @@
+
+.imgContennar img{
+    width: 100%;
+    margin-top: 1rem;
+}
+.main{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.main h1{
+    margin-bottom: 3rem;
+}
+.SearchContaner{
+    width: 75%;
+     margin: 0 auto; 
+    display: flex;
+    border: 1.9px solid #d8d7d7;
+    padding:3rem;
+    justify-content: space-around;
+}
+.SearchContaner input, select{
+    width: 10rem;
+    padding: 3px;
+    margin-right: 1rem;
+    border: 1.9px solid #d8d7d7;
+}
+.serchBtn{
+    position: relative;
+}
+.serchBtn button{
+    width: 6rem;
+    background-color: rgb(250, 203, 115);
+    padding: 6px;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 5px;
+    left: -2rem;
+}
+.sections{
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+   display:grid;
+   gap: 4rem;
+  grid-template-columns: 20rem 20rem 20rem;
+}
+.sectionContenars{
+    width: 19rem;
+     border:1.9px solid #a6a4a4 ;
+     box-shadow: 0px 0px 15px #585555;
+}
+.sectionContenars img{
+    width: 19rem;
+    height:20rem;
+}
+.artstBtn button{
+width: 50%;
+padding: 0.5rem;
+border-radius: 1rem;
+margin-bottom: 1rem;
+}
+.Errore{
+    font-size: 2rem;
+    color: red;
+    font-family:'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width:1024px) {
+      .body{
+        width: 100vw;
+        height: auto;
+
+    }
+    .main{
+        width: 100vw;
+        margin: 0 auto;
+    }
+    .SearchContaner{
+        width: 70%;
+        margin: 0 auto;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 10rem 10rem;
+    }
+
+      .SearchContaner input, select{
+        width: 13rem;
+        display: block;
+    }
+      .SearchContaner h3{
+        display: flex;
+        font-size: 1.3rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .sections{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 15rem 15rem;
+        justify-content: space-around;
+        gap: rem;
+        margin-bottom: 3rem;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .body{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .imgContennar img{
+        width:100%;
+        height: auto;
+    }
+    .main{
+        width: 100%;
+    }
+    .SearchContaner{
+        width: 50%;
+        display: block; 
+        border: 2px solid rgb(193, 186, 186);
+    }
+    .SearchContaner input, select{
+        width: 100%;
+        font-size: 1.5rem;
+        display: block;
+        margin-bottom: 2rem;
+    }
+    .SearchContaner h3{
+        font-size: rem;
+        display: flex;
+        font-size: 1.3rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .serchBtn button{
+        display: block;
+        position: relative;
+        justify-self: center;
+        top: 1.5rem;
+        width: 10rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .sections{
+        display: block;
+    }
+    .sectionContenars img{
+        width: 100%;
+    }
+   .sectionContenars{
+    margin-bottom: 4rem;
+    justify-self: center;
+   }
+}

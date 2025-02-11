@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 function Header() {
 
   const [showburger, setshowburger] = useState(false)
-  const [winwidth, setwinwidth] = useState(null)
+  const [winwidth, setwinwidth] = useState(window.innerWidth)
   //const [toggle, settoggle] = useState(true)
   useEffect(() => {
     window.addEventListener('resize', ()=>{setwinwidth(window.innerWidth); })
