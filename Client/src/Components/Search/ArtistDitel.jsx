@@ -8,7 +8,7 @@ const artistData = [
 
     { id: 3, name: 'Yemane G/michael', status: 'king of music & most popular', type: 'singer', image: '/images/yemane.jpeg',imag:'/images/yemane-barya.jpg', Blog: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Voluptatem tenetur, cum provident recusandae cumque doloremque officia commodi non esse mollitia omnis porro harum ipsam similique exercitationem sint? Repellendus, officia velit' },
 
-    { id: 4, name: 'Yonas Maynas', status: '', type: 'comedian', image: '/images/yonas.jpg',imag:"/images/yonas-maynas.jpg", Blog: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Voluptatem tenetur, cum provident recusandae cumque doloremque officia commodi non esse mollitia omnis porro harum ipsam similique exercitationem sint? Repellendus, officia velit' },
+    { id: 4, name: 'Yonas Maynas', status: 'comedian', type: 'comedian', image: '/images/yonas.jpg',imag:"/images/yonas-maynas.jpg", Blog: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Voluptatem tenetur, cum provident recusandae cumque doloremque officia commodi non esse mollitia omnis porro harum ipsam similique exercitationem sint? Repellendus, officia velit' },
 
     { id: 5, name: 'Alamin Abdeletif', status: 'king of music', type: 'singer', image: '/images/alamin.jpg', Blog: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Voluptatem tenetur, cum provident recusandae cumque doloremque officia commodi non esse mollitia omnis porro harum ipsam similique exercitationem sint? Repellendus, officia velit' },
 
