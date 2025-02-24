@@ -1,3 +1,4 @@
+import About from "./Components/About/About"
 import Footer from "./Components/Footer/Footer"
 import Header from "./Components/Header/Header"
  import { BrowserRouter, Route, Routes} from 'react-router-dom'
@@ -10,8 +11,11 @@ function App() {
     <>
        <BrowserRouter>
        <Header/>
-        <Home/>
-         <Search/> 
+       <Routes>
+        <Route path="/" element={ <Home/>}/>
+        <Route path="/About" element={<About/> }/>
+        <Route path="/Search" element={ <Search/>  }/>
+       </Routes>        
       <Footer/>
        </BrowserRouter>
        </>
