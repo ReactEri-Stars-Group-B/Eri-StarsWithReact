@@ -1,6 +1,9 @@
 
+
 import React, { useState, useEffect } from 'react';
-import stayles from "./search.module.css"
+import stayles from"./search.module.css"
+import ArtistDitel from './ArtistDitel';
+import { Link } from 'react-router-dom';
 function Search() {
 
     const [enterName, setEnterName] = useState('');
@@ -9,11 +12,11 @@ function Search() {
     // const [artistData, setartistData] = useState([]);
 
     const artistData = [
-        { id: 1, name: 'Abeba Haile', status: 'women Singer', type: 'singer', image: '/images/abeba haile.jpeg' },
-        { id: 2, name: 'Abreham Afewerki', status: 'king of music & most popular', type: 'singer', image: '/images/Abreham afewerki.jpg' },
-        { id: 3, name: 'Yemane G/michael', status: 'king of music & most popular', type: 'singer', image: '/images/yemane.jpeg' },
-        { id: 4, name: 'Yonas Maynas', status: '', type: 'comedian', image: '/images/yonas.jpg' },
-        { id: 5, name: 'Alamin Abdeletif', status: 'king of music', type: 'actress', image: '/images/alamin.jpg' },
+      { id: 1, name: 'Abeba Haile', status: 'women Singer', type: 'singer', image: '/images/abeba haile.jpeg' },
+      { id: 2, name: 'Abreham Afewerki', status: 'king of music & most popular', type: 'singer', image: '/images/Abreham afewerki.jpg' },
+      { id: 3, name: 'Yemane G/michael', status: 'king of music & most popular', type: 'singer', image: '/images/yemane.jpeg' },
+      { id: 4, name: 'Yonas Maynas', status: '', type: 'comedian', image: '/images/yonas.jpg' },
+      { id: 5, name: 'Alamin Abdeletif', status: 'king of music', type: 'actress', image: '/images/alamin.jpg' },
 
         { id: 6, name: 'Elsa Kidane', status: 'women singer', type: 'singer', image: '/images/Elsa.jpg' },
 
@@ -21,7 +24,7 @@ function Search() {
 
         { id: 8, name: 'Dehab Fatinga', status: 'women singer', type: 'singer', image: '/images/Dehab Fatinga.jpg' },
 
-        { id: 9, name: 'Helen Meles', status: 'women singer', type: 'actress', image: '/images/Helen Meles.jpg' },
+          { id: 9, name: 'Helen Meles', status: 'women singer', type: 'actress', image: '/images/Helen Meles.jpg' },
     ];
 
     const filteredArtists = artistData.filter(artist =>
@@ -36,8 +39,8 @@ function Search() {
 
     return (
         <div className={stayles.body}>
-            <div className={stayles.imgContennar} pt-30>
-                <img src="/images/banner.jpg" alt="Banner" />
+            <div className= {stayles.imgContennar}pt-30>
+                <img src="/images/banner.jpg" alt="Banner"/>
             </div>
 
             <main className={stayles.main}>
@@ -88,11 +91,13 @@ function Search() {
                         filteredArtists.map((artist) => (
                             <div key={artist.id} className={stayles.sectionContenars}>
                                 <div>
-                                    <img src={artist.image} alt={artist.name} className={stayles.img} />
+                                    <Link to={`/Search/ ${artist.id}`}>  <img src={artist.image} alt={artist.name} className={stayles.img} /></Link>
+                                  
                                 </div>
                                 <h2>{artist.name}</h2>
                                 <div className={stayles.artstBtn}>
-                                    <button>View</button>
+                                    <Link to={`/Search/ ${artist.id}`}><button>View</button></Link>
+                                  
                                 </div>
                             </div>
                         ))
@@ -105,4 +110,4 @@ function Search() {
     );
 }
 
-export default Search;
+export default Search

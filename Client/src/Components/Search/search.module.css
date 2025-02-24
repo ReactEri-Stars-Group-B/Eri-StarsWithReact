@@ -1,6 +1,6 @@
 
 .imgContennar img{
-    width: 100%;
+    width: 100vw;
     margin-top: 1rem;
 }
 .main{
@@ -40,21 +40,25 @@
     left: -2rem;
 }
 .sections{
-    width: 70%;
+    max-width: 70%;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-around;
    display:grid;
-   gap: 4rem;
-  grid-template-columns: 20rem 20rem 20rem;
+  grid-template-columns: 16rem 16rem 16rem;
 }
 .sectionContenars{
-    width: 19rem;
+    width: 16rem;
+    margin-bottom: 4rem;
      border:1.9px solid #a6a4a4 ;
      box-shadow: 0px 0px 15px #585555;
+     transition: transform 0.4s ease-in-out;
+}
+.sectionContenars:hover{
+    transform: scale(1.1); 
 }
 .sectionContenars img{
-    width: 19rem;
-    height:20rem;
+    width: 16rem;
+    height:16rem;
 }
 .artstBtn button{
 width: 50%;
@@ -68,69 +72,95 @@ margin-bottom: 1rem;
     font-family:'Courier New', Courier, monospace;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:855px) {
       .body{
         width: 100vw;
         height: auto;
-
     }
+    .imgContennar img{
+    width: 100vw;
+    margin-top: 1rem;
+}
     .main{
         width: 100vw;
         margin: 0 auto;
     }
     .SearchContaner{
-        width: 70%;
+        width: 60%;
+        height: 12rem;
+        padding: 0;
         margin: 0 auto;
-        padding: 1rem;
         display: grid;
         grid-template-columns: 10rem 10rem;
     }
 
       .SearchContaner input, select{
-        width: 13rem;
+        width: 10rem;
         display: block;
+
     }
       .SearchContaner h3{
         display: flex;
-        font-size: 1.3rem;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       }
       .sections{
-        width: 70%;
+        width: 50%;
         display: grid;
         grid-template-columns: 15rem 15rem;
-        justify-content: space-around;
-        gap: rem;
+        /* position: relative;
+        left: -4rem; */
         margin-bottom: 3rem;
     }
+    .sectionContenars{
+    width: 14rem;
+     border:1.9px solid #a6a4a4 ;
+     box-shadow: 0px 0px 15px #585555;
+     transition: transform 0.4s ease-in-out;
+}
+.sectionContenars:hover{
+    transform: scale(1.1); 
+}
+.sectionContenars img{
+    width: 14rem;
+    height:10rem;
+}
+.serchBtn button{
+    width: 5rem;
+    background-color: rgb(250, 203, 115);
+    padding: 6px;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 5px;
+    left: 0rem;
+}
 }
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:580px) {
     .body{
         width: 100%;
-        margin: 0 auto;
     }
     .imgContennar img{
-        width:100%;
+        width:100vw;
         height: auto;
     }
     .main{
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
     }
     .SearchContaner{
-        width: 50%;
-        display: block; 
+        width: 40%;
+        height: auto;
+        display: block;
+        padding: 2rem;
         border: 2px solid rgb(193, 186, 186);
     }
     .SearchContaner input, select{
-        width: 100%;
+        width: 80%;
         font-size: 1.5rem;
-        display: block;
         margin-bottom: 2rem;
     }
     .SearchContaner h3{
-        font-size: rem;
         display: flex;
         font-size: 1.3rem;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -138,20 +168,24 @@ margin-bottom: 1rem;
     .serchBtn button{
         display: block;
         position: relative;
-        justify-self: center;
+        justify-self:center;
         top: 1.5rem;
-        width: 10rem;
-        padding: 1rem;
+        width: 6rem;
+        padding: 0.5rem;
         margin-bottom: 1rem;
     }
     .sections{
+        width: 40%;
         display: block;
+        position: none;
+        left: 0;
     }
     .sectionContenars img{
-        width: 100%;
+        width:12rem;
+        
     }
    .sectionContenars{
+    width: 12rem;
     margin-bottom: 4rem;
-    justify-self: center;
    }
 }

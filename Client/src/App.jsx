@@ -1,7 +1,7 @@
 import Footer from "./Components/Footer/Footer"
 import Header from "./Components/Header/Header"
-import { BrowserRouter, Route, Routes} from 'react-router-dom'
-import Home from "./Components/Home/Home"
+ import { BrowserRouter, Route, Routes} from 'react-router-dom'
+ import Home from "./Components/Home/Home"
 import Search from "./Components/Search/Search"
 function App() {
   
