@@ -27,13 +27,13 @@ function ArtistDitel() {
 
   return (
     <>
-          <div style={{ textAlign: 'center', padding: '20px',marginTop:'5rem',}}>
+          <div style={{ textAlign: 'center', padding: '20px',marginTop:'4rem',}}>
               <h2>{artist.name}</h2>
               <img src={artist.image} alt={artist.name} style={{ width: '450px', height: 'auto', borderRadius: '10px',marginRight:'3rem' }} />
               <img src={artist.imag} alt={artist.name} style={{ width: '300px', height: 'auto', borderRadius: '10px'}} />
-              <p><strong>Status:</strong> {artist.status}</p>
-              <p><strong>Type:</strong> {artist.type}</p>
-              <p style={{width:'300px', background:'darkgrey',position:'relative',left:'43rem' }}>{artist.Blog}</p>
+              <p style={{ textAlign: 'center' }}><strong>Status:</strong> {artist.status}</p>
+              <p style={{textAlign:'center'}}><strong>Type:</strong> {artist.type}</p>
+              <p style={{width:'500px', background:'darkgrey',position:'relative',left:'43rem' }}>{artist.Blog}</p>
 
           </div>
     </>

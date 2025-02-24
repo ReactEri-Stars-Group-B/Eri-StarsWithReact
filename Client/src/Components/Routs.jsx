@@ -3,6 +3,7 @@ import Home from "./Home/Home";
 import Search from "./Search/Search";
 import Container from "./Container";
 import ArtistDitel from "./Search/ArtistDitel";
+import About from "./About/About"
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
             {
                 path: 'Search/:id',
                 element: <ArtistDitel />
+            },
+            {
+                path: 'About',
+                element: <About/>
             },
         ]
     },
