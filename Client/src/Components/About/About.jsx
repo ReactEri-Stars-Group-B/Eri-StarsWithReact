@@ -7,7 +7,7 @@ function About() {
         <img src="/images/banner.jpg" alt="" />
       </div>
       <main className={style.main}>
-        <h1 className={style.titel}>who we are</h1>
+        <h2 className={style.titel}>who we are</h2>
         <div className={style.contaner}>
           <img src="/images/yonas.jpg" alt="" />
           <p className={style.p1}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, molestias dicta. Perferendis quos illo culpa voluptas necessitatibus sunt. Aperiam cupiditate suscipit harum optio iusto quisquam dolor adipisci! Modi nihil id tempore eum iure. Vitae reiciendis dolorem exercitationem deserunt sapiente nemo fugit temporibus suscipit aliquam ipsa mollitia eaque tempora natus, nesciunt illo in alias quae eum animi eligendi! Atque modi nihil minus dolores repellendus voluptatibus consequatur dolore quidem possimus suscipit ex quia ipsum, labore dignissimos error sequi beatae veniam vero voluptas adipisci! Temporibus quam reprehenderit labore cum et officiis magni harum, possimus autem earum voluptas repellendus ut corrupti dicta tempora numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nostrum aperiam sed quaerat? Repudiandae nobis facilis ducimus eius harum. Fugit porro culpa nobis accusantium provident, quia perferendis cupiditate illo, error illum ut odio amet ea quam? Consequatur, nesciunt cupiditate at quisquam ullam aliquid corporis perspiciatis sunt ea laborum impedit laudantium.

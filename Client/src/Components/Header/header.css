@@ -50,9 +50,10 @@
     transform: scale(1.1);
 }
 
-@media screen and (max-width:614px) {
+@media screen and (max-width:300px) {
     .headercontainer{
       justify-content: space-between;
+      width: 65%;
     }.headercontainer nav{
         position: absolute;
         background-color: rgb(220, 228, 236);

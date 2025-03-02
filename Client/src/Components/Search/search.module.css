@@ -57,14 +57,24 @@
     transform: scale(1.1); 
 }
 .sectionContenars img{
-    width: 16rem;
-    height:16rem;
+     width: 16rem;
+    height:16rem; 
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+   background-color:rgb(213, 211, 209) ;
+   border-radius: 7px;
+   box-shadow: 0 0 20px rgb(199, 186, 174) ;
+   transition: transform 0.5s ease-in-out;
 }
 .artstBtn button{
-width: 50%;
+/* width: 50%;
 padding: 0.5rem;
 border-radius: 1rem;
-margin-bottom: 1rem;
+margin-bottom: 1rem; */
+   width: 100%;
+    height: 200px;
 }
 .Errore{
     font-size: 2rem;
